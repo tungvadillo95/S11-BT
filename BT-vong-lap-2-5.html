@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+    <script>
+        var tienVay=+prompt('Nhập số tiền vay(Triệu VNĐ): ');
+        var soThang=+prompt('Nhập số tháng vay: ');
+        var laiSuat=+prompt('Nhập lãi suất ngân hàng mỗi tháng(%): ');
+        var a=tienVay;
+        var tienLai=0;
+        var tong=0;
+        for (i=1;i<=soThang;i++){
+            tienVay+=tienLai;
+            tienLai=(laiSuat*tienVay/100);
+            tong= tienVay+=tienLai;
+        }
+        alert('Tổng tiền lãi sau '+soThang+' tháng là :'+(tong-a)+'Triệu VNĐ');
+    </script>
+</body>
+</html>
