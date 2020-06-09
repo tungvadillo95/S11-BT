@@ -12,21 +12,21 @@
         var sout;
         sout = '<table><tr>'
         for (i = 1; i <= 21; i++) {
-            sout = sout + ('<td>*</td>');
+            sout = sout + ('<th>*</th>');
         }
         sout = sout + "</tr><br>"
         for (i = 1; i <= 5; i++) {
             sout = sout + "<tr>";
-            sout = sout + ('<td>*</td>');
+            sout = sout + ('<th>*</th>');
             for (k = 1; k <= 19; k++) {
                 sout = sout + ('<td></td>');
             }
-            sout = sout + ('<td>*</td>');
+            sout = sout + ('<th>*</th>');
             sout = sout + "</tr><br>"
         }
         sout = sout + "</tr>"
         for (i = 1; i <= 21; i++) {
-            sout = sout + ('<td>*</td>');
+            sout = sout + ('<th>*</th>');
         }
         sout = sout + "</table>";
         document.write(sout);
