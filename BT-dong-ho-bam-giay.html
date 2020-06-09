@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng 30 số tự nhiên đầu tiên chia hết 7</title>
+</head>
+
+<body>
+    <script>
+       var giay=0;
+       var max=+prompt('Nhập thời gian(s): ');
+       var dongHo;
+           dongHo=setInterval(()=>{
+               document.write(++giay)
+               if(giay>=max){
+                   clearInterval(dongHo);
+                   alert(`Thời gian ${max}s kết thúc`)
+               }
+       } ,1000);
+      
+    </script>
+</body>
+
+</html>

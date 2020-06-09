@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game đoán số</title>
+</head>
+
+<body>
+    <button type="button" onclick="choi()">Chơi</button>
+    <script>
+        function choi() {
+            var a = +prompt('Giá trị bé nhất trong khoảng là: ');
+            var b = +prompt('Giá trị lớn nhất trong khoảng là: ');
+            var x = Math.floor(Math.random() * (b - a)) + a;
+            alert(x);
+            var soDoan = +prompt('Nhập giá trị đoán: ');
+            var i = 1;
+            while (true) {
+                if (soDoan === x) {
+                    alert('Chúc mừng bạn đã đoán đúng!')
+                    break;
+                }
+                else if (soDoan < x) {
+                    alert('Bạn đã đoán sai và thấp hơn!');
+                    var soDoan = +prompt('Nhập lại giá trị đoán: ');
+                    i++;
+                }
+                else if (soDoan > x) {
+                    alert('Bạn đã đoán sai và cao hơn!');
+                    var soDoan = +prompt('Nhập lại giá trị đoán: ');
+                    i++;
+                }
+                else alert('Không hợp lệ!');
+                if ((i === 3) && (soDoan === x)) {
+                    alert('Chúc mừng bạn đã đoán đúng!')
+                    break;
+                }
+                if (i === 3) {
+                    alert('Bạn đã đoán sai 3 lần! Vui lòng chơi lại!');
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

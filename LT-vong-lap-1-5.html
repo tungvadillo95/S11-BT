@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng 20 số đầu tiên trong dãy Fibonacci</title>
+</head>
+
+<body>
+    <script>
+        var i = 0;
+        var z = 0;
+        var a = 1;
+        var b = 0;
+        var temp;
+        while (i !== 18) {
+            temp = a;
+            a = a + b;
+            z += a;
+            b = temp;
+            i++;
+        }
+        alert('Tổng 20 số đầu tiên trong dãy Fibonacci là: ' + (z + 1));
+    </script>
+</body>
+
+</html>

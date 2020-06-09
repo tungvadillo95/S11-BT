@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số Fibonacci đầu tiên chia hết 5</title>
+</head>
+<body>
+    <script>
+        var a=1;
+        var b=0;
+        var temp;
+            while ((a%5)!==0){
+            temp=a;
+            a=a+b;
+            b=temp;  
+        }
+        alert('Số Fibonacci đầu tiên chia hết 5 là: '+a);
+       
+    </script>
+</body>
+</html>

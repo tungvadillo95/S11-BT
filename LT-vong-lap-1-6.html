@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng 30 số tự nhiên đầu tiên chia hết 7</title>
+</head>
+
+<body>
+    <script>
+        var i=0;
+        var x=1;
+        var tong=0;
+       while(i!=30){
+              if(x%7==0){       
+                  i++;
+                  tong+=x;
+                  x=x+1;
+              }
+              else x=x+1;
+       }
+       alert('Tổng 30 số tự nhiên đầu tiên chia hết 7 là: '+tong);
+    </script>
+</body>
+
+</html>

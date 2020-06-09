@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dãy 20 số Fibonacci đầu tiên</title>
+</head>
+
+<body>
+    <script>
+        var numbers = +prompt('Nhập số lượng số Fibonacci đầu tiên (n>2): ');
+        var a = 1;
+        var b = 0;
+        var temp;
+        document.write('Dãy Fibonacci: 0, 1, ')
+        while ((numbers - 2) > 0) {
+            temp = a;
+            document.write(a + b + ', ')
+            a = a + b;
+            b = temp;
+            numbers--;
+        }
+    </script>
+</body>
+
+</html>
